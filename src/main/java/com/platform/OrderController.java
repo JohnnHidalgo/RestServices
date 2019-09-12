@@ -55,4 +55,19 @@ class OrderController {
                 .status(HttpStatus.METHOD_NOT_ALLOWED)
                 .body(new VndErrors.VndError("Method not allowed", "You can't cancel an order that is in the " + order.getStatus() + " status"));
     }
+
+    @PutMapping("/orders/{id}/complete")
+    ResponseEntity<ResourceSupport> complete(@PathVariable Long id) {
+
+        Order order = orderRepository.findById(id).orElseThrow(() -> new OrderNotFoundException(id));
+
+        if (order.getStatus() == Status.IN_PROGRESS) {
+            order.setStatus(Status.COMPLETED);
+            return ResponseEntity.ok(assembler.toResource(orderRepository.save(order)));
+        }
+
+        return ResponseEntity
+                .status(HttpStatus.METHOD_NOT_ALLOWED)
+                .body(new VndErrors.VndError("Method not allowed", "You can't complete an order that is in the " + order.getStatus() + " status"));
+    }
 }
