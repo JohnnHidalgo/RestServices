@@ -25,8 +25,13 @@ public class TeacherController {
     }
 
     @PostMapping("/teacher")
-    Teacher newTeacher(@RequestBody Teacher newTeacher) {
-        return repository.save(newTeacher);
+    ResponseEntity<?> newTeacher(@RequestBody Teacher newTeacher) throws URISyntaxException {
+
+        Resource<Teacher> resource = assembler.toResource(repository.save(newTeacher));
+
+        return ResponseEntity
+                .created(new URI(resource.getId().expand().getHref()))
+                .body(resource);
     }
 
     // Single item
