@@ -30,10 +30,10 @@ public class TeacherController {
 
     @GetMapping("/teacher/{id}")
     Teacher one(@PathVariable Long id) {
-
         return repository.findById(id)
                 .orElseThrow(() -> new TeacherNotFoundException(id));
     }
+
     @PutMapping("/teacher/{id}")
     Teacher replaceTeacher(@RequestBody Teacher newTeacher, @PathVariable Long id) {
 
