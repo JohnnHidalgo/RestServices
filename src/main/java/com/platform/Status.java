@@ -1,4 +1,7 @@
 package com.platform;
 
-public class Status {
+enum  Status {
+    IN_PROGRESS,
+    COMPLETED,
+    CANCELLED;
 }
