@@ -1,4 +1,5 @@
 package com.platform;
+
 import java.util.List;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -8,13 +9,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-public class TeacherController {
+
+@RestController
+class TeacherController {
+
     private final TeacherRepository repository;
-    private final TeacherResourceAssembler assembler;
-    TeacherController(TeacherRepository repository,
-                      TeacherResourceAssembler assembler) {
+
+    TeacherController(TeacherRepository repository) {
         this.repository = repository;
-        this.assembler = assembler;
     }
 
     // Aggregate root
@@ -25,28 +27,21 @@ public class TeacherController {
     }
 
     @PostMapping("/teacher")
-    ResponseEntity<?> newTeacher(@RequestBody Teacher newTeacher) throws URISyntaxException {
-
-        Resource<Teacher> resource = assembler.toResource(repository.save(newTeacher));
-
-        return ResponseEntity
-                .created(new URI(resource.getId().expand().getHref()))
-                .body(resource);
+    Teacher newEmployee(@RequestBody Teacher newTeacher) {
+        return repository.save(newTeacher);
     }
 
     // Single item
 
     @GetMapping("/teacher/{id}")
-    Resource<Teacher> one(@PathVariable Long id) {
+    Teacher one(@PathVariable Long id) {
 
-        Teacher employee = repository.findById(id)
+        return repository.findById(id)
                 .orElseThrow(() -> new TeacherNotFoundException(id));
-
-        return assembler.toResource(employee);
     }
 
     @PutMapping("/teacher/{id}")
-    Teacher replaceTeacher(@RequestBody Teacher newTeacher, @PathVariable Long id) {
+    Teacher replaceEmployee(@RequestBody Teacher newTeacher, @PathVariable Long id) {
 
         return repository.findById(id)
                 .map(employee -> {
@@ -59,9 +54,9 @@ public class TeacherController {
                     return repository.save(newTeacher);
                 });
     }
+
     @DeleteMapping("/teacher/{id}")
-    void deleteTeacher(@PathVariable Long id) {
+    void deleteEmployee(@PathVariable Long id) {
         repository.deleteById(id);
     }
-
 }

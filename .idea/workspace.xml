@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3a7c8639-d8ba-4e3b-ae0f-e69b3c404705" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platform/LoadDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platform/LoadDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platform/PlatformApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platform/PlatformApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platform/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platform/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platform/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platform/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platform/TeacherRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platform/TeacherRepository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,9 +15,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FavoritesManager">
     <favorites_list name="RestServices" />
   </component>
+=======
+>>>>>>> aa704a749d4e5aacf429f80086102b99e5871976
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -23,7 +31,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="1QjiUwmEGGeHGGO0uo8ryYLLKWk" />
+=======
+  <component name="ProjectId" id="1QifPuWrazCRM88zuLfBeN4bcLS" />
+>>>>>>> aa704a749d4e5aacf429f80086102b99e5871976
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="LombokPluginEnabledInProject" value="true" />
@@ -51,8 +63,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+<<<<<<< HEAD
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+=======
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+>>>>>>> aa704a749d4e5aacf429f80086102b99e5871976
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -71,6 +87,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Spring Boot.PlatformApplication (1)">
     <configuration name="PlatformApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="RestServices" />
@@ -85,6 +102,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+  <component name="RunManager" selected="Spring Boot.PlatformApplication">
+>>>>>>> aa704a749d4e5aacf429f80086102b99e5871976
     <configuration name="PlatformApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="RestServices" />
       <extension name="coverage">
@@ -107,6 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Spring Boot.PlatformApplication (1)" />
         <item itemvalue="Spring Boot.PlatformApplication" />
       </list>
@@ -132,6 +153,11 @@
         </treeState>
       </serviceView>
     </option>
+=======
+        <item itemvalue="Spring Boot.PlatformApplication" />
+      </list>
+    </recent_temporary>
+>>>>>>> aa704a749d4e5aacf429f80086102b99e5871976
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -144,9 +170,13 @@
       <option name="presentableId" value="Default" />
       <updated>1568252900722</updated>
       <workItem from="1568252903660" duration="1364000" />
+<<<<<<< HEAD
       <workItem from="1568290427353" duration="1453000" />
       <workItem from="1568294620366" duration="2658000" />
       <workItem from="1568297379771" duration="6241000" />
+=======
+      <workItem from="1568258330463" duration="1088000" />
+>>>>>>> aa704a749d4e5aacf429f80086102b99e5871976
     </task>
     <servers />
   </component>
@@ -158,9 +188,13 @@
       <map>
         <entry key="MAIN">
           <value>
+<<<<<<< HEAD
             <State>
               <option name="COLUMN_ORDER" />
             </State>
+=======
+            <State />
+>>>>>>> aa704a749d4e5aacf429f80086102b99e5871976
           </value>
         </entry>
       </map>
