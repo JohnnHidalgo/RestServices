@@ -20,4 +20,13 @@ class Teacher {
     this.name = name;
     this.course = course;
   }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        String[] parts =name.split(" ");
+        this.name = parts[0];
+    }
 }
