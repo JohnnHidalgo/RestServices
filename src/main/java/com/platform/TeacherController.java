@@ -32,9 +32,12 @@ public class TeacherController {
     // Single item
 
     @GetMapping("/teacher/{id}")
-    Teacher one(@PathVariable Long id) {
-        return repository.findById(id)
+    Resource<Teacher> one(@PathVariable Long id) {
+
+        Teacher employee = repository.findById(id)
                 .orElseThrow(() -> new TeacherNotFoundException(id));
+
+        return assembler.toResource(employee);
     }
 
     @PutMapping("/teacher/{id}")
