@@ -1,4 +1,8 @@
 package com.platform;
 
-public class TeacherNotFoundException {
+class TeacherNotFoundException extends RuntimeException {
+
+    TeacherNotFoundException(Long id) {
+        super("Could not find teacher " + id);
+    }
 }
