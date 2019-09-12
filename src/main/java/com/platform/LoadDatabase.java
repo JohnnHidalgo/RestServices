@@ -1,4 +1,4 @@
-package platform;
+package com.platform;
 
 import lombok.extern.slf4j.Slf4j;
 
