@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 public class TeacherController {
     private final TeacherRepository repository;
-    TeacherController(TeacherRepository repository) {
+    private final TeacherResourceAssembler assembler;
+    TeacherController(TeacherRepository repository,
+                      TeacherResourceAssembler assembler) {
         this.repository = repository;
+        this.assembler = assembler;
     }
 
     // Aggregate root
